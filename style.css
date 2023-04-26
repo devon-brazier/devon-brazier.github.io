@@ -7,7 +7,7 @@
 }
 
 .header-container {
-  background-image: url("img/sunset-ocean-header.jpeg");
+  background-image: url("sunset-ocean-header.jpeg");
   background-color: #cccccc;
   place-content: left;
   padding: 1rem;
