@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header-container {
+  background-image: url("img/sunset-ocean-header.jpeg");
+  background-color: #cccccc;
+  place-content: left;
+  padding: 1rem;
+  grid-area: hd;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(150px, auto);
+  gap: 1rem;
+  color: #002d62;
+}
+
+.header-container p {
+  text-align: right;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  min-height: 100vh;
+
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-auto-rows: min-content;
+  grid-template-areas:
+    "hd hd hd hd hd hd hd hd"
+    "mn mn mn mn mn mn mn mn";
+  column-gap: 0.5rem;
+  color: #002d62;
+  background-color: #f8f8f8;
+}
+
+.container {
+  grid-area: mn;
+  min-height: 400px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-auto-rows: minmax(150px, auto);
+  gap: 0;
+}
+
+.box {
+  font-size: 2rem;
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+
+.box h2 {
+  font-size: 1.6rem;
+  margin: 0.4rem;
+}
+
+.box:first-child {
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+}
+
+.box:nth-child(3) {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+.horizontal-box {
+  display: flex;
+  align-items: center;
+}
+
+.horizontal-box img {
+  margin-right: 0.5rem;
+  margin-top: 0.2rem;
+}
+
+.vertical-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.vertical-box h2 {
+  margin: 0;
+}
+
+.vertical-box h3 {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+
+.vertical-box p {
+  font-size: 0.9rem;
+}
+
+.vertical-box ul {
+  list-style: none;
+  line-height: 1.2rem;
+}
+
+.vertical-box ul li {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+}
+
+.skills-flex {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 1rem;
+}
+
+.skills-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-style: solid;
+  border-radius: 1rem;
+  border-width: 1px;
+  padding: 1rem;
+}
+
+.skills-box h3 {
+  font-size: 1rem;
+}
+
+.icon {
+  margin-right: 0.5rem;
+  margin-bottom: 0.2rem;
+  width: 19px;
+  height: 19px;
+  font-size: 1.2rem;
+}
+
+.contact-list {
+  list-style-type: none;
+}
+
+.contact-list li a {
+  color: inherit;
+}
+
+.horizontal-list {
+  line-height: 0.8rem;
+}
+
+.horizontal-list li {
+  display: inline-block;
+  font-size: 0.8rem;
+}
+
+.bullet-list {
+  list-style-type: disc;
+}
+
+.bold-span {
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+    </style>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Devon Brazier</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="header-container">
+      <div class="vertical-box">
+        <h1>Devon Brazier</h1>
+        <h2>Full-stack software engineer</h2>
+        <ul class="contact-list">
+          <li class="contact-list">
+            <div class="horizontal-box">
+              <p class="icon">📞</p>
+              <a href="tel:+447540420135">(+44)7540420135</a>
+            </div>
+          </li>
+          <li>
+            <div class="horizontal-box">
+              <p class="icon">📧</p>
+              <a href="mailto:random@email.com">devonbrazier@protonmail.com</a>
+            </div>
+          </li>
+          <li>
+            <div class="horizontal-box">
+              <img
+                src="img/linkedin.256x256.png"
+                alt="LinkedIn Icon"
+                title="LinkedIn Icon"
+                width="19"
+                height="19"
+                loading="lazy"
+              />
+              <a
+                href="https://www.linkedin.com/in/devon-brazier"
+                target="”_blank”"
+                >LinkedIn</a
+              >
+            </div>
+          </li>
+          <li>
+            <div class="horizontal-box">
+              <img
+                src="img/github.256x252.png"
+                alt="Github Icon"
+                title="Github Icon"
+                width="19"
+                height="19"
+              />
+              <a href="https://github.com/yenille/" target="”_blank”">GitHub</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="vertical-box">
+        <p>
+          As a highly motivated and detail-oriented software engineer with 3
+          years of experience, I dedicate my work to creating high-quality
+          systems and user experiences. My proficiency with various programming
+          laguages and dev tools has enabled me to continuously improve my work
+          and exceed expectations. Additionally, my strong communication and
+          problem-solving skills allow me to functionwell in a team environment
+          and collaborate with corss-functional groups. I am constantly seeking
+          oppourtunity to expand my knowledge and improve my abilities.
+        </p>
+        <p>
+          I live in Warwickshire currently seeking a position as a full-stack or
+          backend engineer for a company with offers a hybrid approach to
+          working.
+        </p>
+      </div>
+    </header>
+    <main class="container">
+      <section class="box">
+        <h2>Skills</h2>
+        <div class="skills-flex">
+          <div class="skills-box">
+            <h3>Frontend</h3>
+            <ul class="horizontal-list">
+              <li>Javascript</li>
+              <li>HTML/CSS</li>
+              <li>Firebase</li>
+              <li>React</li>
+              <li>Redux</li>
+              <li>Svelte</li>
+            </ul>
+          </div>
+
+          <div class="skills-box">
+            <h3>API</h3>
+            <ul class="horizontal-list">
+              <li>REST</li>
+              <li>GraphQL</li>
+              <li>RPC</li>
+            </ul>
+          </div>
+
+          <div class="skills-box">
+            <h3>Server</h3>
+            <ul class="horizontal-list">
+              <li>Microservices</li>
+              <li>Firebase</li>
+              <li>AWS Lambda</li>
+              <li>Docker</li>
+              <li>Java</li>
+              <li>Python</li>
+              <li>Scala</li>
+              <li>Golang</li>
+            </ul>
+          </div>
+
+          <div class="skills-box">
+            <h3>Data</h3>
+            <ul class="horizontal-list">
+              <li>SQL</li>
+              <li>NoSQL</li>
+              <li>Firestore</li>
+              <li>DynamoDB</li>
+              <li>PostgreSQL</li>
+              <li>Contentful</li>
+            </ul>
+          </div>
+
+          <div class="skills-box">
+            <h3>AI</h3>
+            <ul class="horizontal-list">
+              <li>Mathematics</li>
+              <li>PyTorch</li>
+              <li>Pandas</li>
+              <li>Neural Networks</li>
+              <li>Transformers</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="box">
+        <div class="vertical-box">
+          <h2>Experience</h2>
+          <ul>
+            <li>
+              <h3>Ocado Technology</h3>
+              <p>Software Engineer &#x2022; <em>Sept 2020 - present</em></p>
+              <ul>
+                <li>
+                  <p>
+                    <span class="bold-span"
+                      >Test Engineering &#x2022;
+                      <em>Sept 2020 - March 2021</em></span
+                    >
+                    <br />
+                    Development on an integration testing framework for
+                    applications running in the warehouses. Built using scala,
+                    docker and kubernetes to automatically deploy test
+                    deployments that users [other development teams] could write
+                    tests to assert the boundaries across warehouse
+                    applications.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <span class="bold-span"
+                      >Perception Robotics &#x2022;
+                      <em>March 2021 - Sept 2021</em></span
+                    >
+                    <br />
+                    Built a suite of applications to simulate operations in the
+                    warehouse. This allowed the robotic teams to test their
+                    software changes against physics engines as a form of
+                    pre-testing before using a live pick-station. Applications
+                    developed using python (FastAPI, gRPC), docker, ROS (Robot
+                    Operating System) and Unity physics engine. The simulation
+                    suite improved the SDLC and caught bugs before the need for
+                    physical testing, which had limited availability and a slow
+                    feedback loop.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <span class="bold-span"
+                      >Ecommerce &#x2022; <em>Sept 2021 - present</em></span
+                    >
+                    <br />
+                    Feature building on the ecommerce offering within a
+                    cross-functional team [mobile, web, backend]. Deploying
+                    changes to 9 major clients across 9 different countries,
+                    including in-office and out-of-office support
+                    responsibilites. Delivered value as a full-stack engineer
+                    using javascript, react and redux for the frontend and java
+                    spring microservices, AWS lambdas, dynamoDB for backend.
+                    <br />
+                    <br />
+                    Specific works includes:
+                    <ul>
+                        <li>
+                            Designing and building full-stack system for recipes on the
+                            platform, leveraging Contentful third party service as a
+                            CMS. Enabling clients to build recipes for their ecommerce
+                            shop and customers to fulfill their grocery needs through a
+                            meal centric approach to shopping.
+                        </li>
+                        <li>
+                            Designed and built SEO designed into the recipes feature,
+                            allowing clients to maximise their searchability on recipes
+                            through search engines. Supported in all languages offered
+                            to the customer.
+                        </li>
+                        <li>
+                            Designed a system for a platform wide sitemap, using AWS
+                            lambda, S3, and Cloudfront. Including all products and
+                            recipes in all available languages. Designed to maximise
+                            autonomy and code ownership for teams whilst minimising
+                            cost.
+                        </li>
+                        <li>
+                            Refactoring AWS lambdas which processed product images to
+                            reduce bundle sizes, saving runtime cloud costs.
+                        </li>
+                    </ul>
+                  </p>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="box">
+        <div class="vertical-box">
+          <h2>Education</h2>
+          <ul>
+            <li>
+              <h3>University of Birmingham</h3>
+              <p>
+                Computer Science MSc<br />Class II Division I - Average 86%<br />2019-2020
+              </p>
+            </li>
+            <li>
+              <h3>University of Birmingham</h3>
+              <p>Physics MSc<br />Class II Division I<br />2015-2018</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
