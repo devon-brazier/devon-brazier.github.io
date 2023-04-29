@@ -4,154 +4,294 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Devon Brazier</title>
+    <title>Devon Brazier - Full-stack Software Engineer</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
 
   <body>
-    <header class="header-container">
-      <div class="vertical-box">
-        <h1>Devon Brazier</h1>
-        <h2>Full-stack software engineer</h2>
-        <ul class="contact-list">
-          <li class="contact-list">
-            <div class="horizontal-box">
-              <p class="icon">📞</p>
-              <a href="tel:+447540420135">(+44)7540420135</a>
-            </div>
-          </li>
-          <li>
-            <div class="horizontal-box">
-              <p class="icon">📧</p>
-              <a href="mailto:random@email.com">devonbrazier@protonmail.com</a>
-            </div>
-          </li>
-          <li>
-            <div class="horizontal-box">
-              <img
-                src="img/linkedin.256x256.png"
-                alt="LinkedIn Icon"
-                title="LinkedIn Icon"
-                width="19"
-                height="19"
-                loading="lazy"
-              />
-              <a
-                href="https://www.linkedin.com/in/devon-brazier"
-                target="”_blank”"
-                >LinkedIn</a
-              >
-            </div>
-          </li>
-          <li>
-            <div class="horizontal-box">
-              <img
-                src="img/github.256x252.png"
-                alt="Github Icon"
-                title="Github Icon"
-                width="19"
-                height="19"
-              />
-              <a href="https://github.com/yenille/" target="”_blank”">GitHub</a>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <div class="vertical-box">
-        <p>
-          As a highly motivated and detail-oriented software engineer with 3
-          years of experience, I dedicate my work to creating high-quality
-          systems and user experiences. My proficiency with various programming
-          laguages and dev tools has enabled me to continuously improve my work
-          and exceed expectations. Additionally, my strong communication and
-          problem-solving skills allow me to functionwell in a team environment
-          and collaborate with corss-functional groups. I am constantly seeking
-          oppourtunity to expand my knowledge and improve my abilities.
-        </p>
-        <p>
-          I live in Warwickshire currently seeking a position as a full-stack or
-          backend engineer for a company with offers a hybrid approach to
-          working.
-        </p>
-      </div>
+    <header
+      class="hidden fixed top-0 w-full md:block border-b border-gray-200 bg-white"
+    >
+      <nav class="flex w-full items-center justify-end space-x-8 py-6 px-8">
+        <a
+          href="#skills"
+          class="text-md text-gray-400 font-medium hover:text-black"
+          >Skills</a
+        >
+        <a
+          href="#experience"
+          class="text-md text-gray-400 font-medium hover:text-black"
+          >Experience</a
+        >
+        <a
+          href="#education"
+          class="text-md text-gray-400 font-medium hover:text-black"
+          >Education</a
+        >
+        <a
+          href="#contact"
+          class="text-md text-gray-400 font-medium hover:text-black"
+          >Contact</a
+        >
+      </nav>
     </header>
-    <main class="container">
-      <section class="box">
-        <h2>Skills</h2>
-        <div class="skills-flex">
-          <div class="skills-box">
-            <h3>Frontend</h3>
-            <ul class="horizontal-list">
-              <li>Javascript</li>
-              <li>HTML/CSS</li>
-              <li>Firebase</li>
-              <li>React</li>
-              <li>Redux</li>
-              <li>Svelte</li>
-            </ul>
-          </div>
 
-          <div class="skills-box">
-            <h3>API</h3>
-            <ul class="horizontal-list">
-              <li>REST</li>
-              <li>GraphQL</li>
-              <li>RPC</li>
-            </ul>
-          </div>
-
-          <div class="skills-box">
-            <h3>Server</h3>
-            <ul class="horizontal-list">
-              <li>Microservices</li>
-              <li>Firebase</li>
-              <li>AWS Lambda</li>
-              <li>Docker</li>
-              <li>Java</li>
-              <li>Python</li>
-              <li>Scala</li>
-              <li>Golang</li>
-            </ul>
-          </div>
-
-          <div class="skills-box">
-            <h3>Data</h3>
-            <ul class="horizontal-list">
-              <li>SQL</li>
-              <li>NoSQL</li>
-              <li>Firestore</li>
-              <li>DynamoDB</li>
-              <li>PostgreSQL</li>
-              <li>Contentful</li>
-            </ul>
-          </div>
-
-          <div class="skills-box">
-            <h3>AI</h3>
-            <ul class="horizontal-list">
-              <li>Mathematics</li>
-              <li>PyTorch</li>
-              <li>Pandas</li>
-              <li>Neural Networks</li>
-              <li>Transformers</li>
-            </ul>
-          </div>
+    <div class="max-w-5xl md:space-x-20 md:flex mx-auto py-16 md:py-32 px-12">
+      <aside class="md:sticky h-full top-32 flex-shrink-0 mb-8 md:mb-0">
+        <h1 class="font-extrabold text-3xl text-black">Devon Brazier</h1>
+        <p class="text-blue-600 font-semibold text-md mt-2">
+          Full-stack Software Engineer
+        </p>
+        <div class="hidden space-y-1 md:flex flex-col mt-4">
+          <a
+            href="http://www.devonbrazier.co.uk"
+            target="_blank"
+            class="text-sm text-gray-500 font-medium underline hover:text-black"
+            ><i class="hi-icon hi-home"></i> devonbrazier.co.uk</a
+          >
+          <a
+            href="mailto:devonbrazier@protonmail.com"
+            class="text-sm text-gray-500 font-medium underline hover:text-black"
+            >devonbrazier@protonmail.com</a
+          >
+          <a
+            href="tel:+447540420135"
+            class="text-sm text-gray-500 font-medium underline hover:text-black"
+            >(+44)7540420135</a
+          >
         </div>
-      </section>
-      <section class="box">
-        <div class="vertical-box">
-          <h2>Experience</h2>
+      </aside>
+      <main class="space-y-16">
+        <section id="about-me" class="space-y-4">
+          <h2 class="font-extrabold text-3xl text-black">About me</h2>
+          <p class="text-ms text-gray-900 leading-6">
+            As a highly motivated and detail-oriented software engineer with 3
+            years of experience, I dedicate my work to creating high-quality
+            systems and user experiences. My proficiency with various
+            programming laguages and dev tools has enabled me to continuously
+            improve my work and exceed expectations.
+          </p>
+
+          <p class="text-ms text-gray-900 leading-6">
+            Additionally, my strong communication and problem-solving skills
+            allow me to function well in a team environment and collaborate with
+            cross-functional groups. I am constantly seeking oppourtunity to
+            expand my knowledge and improve my abilities.
+          </p>
+          <p class="text-ms text-gray-900 leading-6">
+            I live in Warwickshire currently seeking a position as a full-stack
+            or backend engineer for a company with offers a hybrid approach to
+            working.
+          </p>
+        </section>
+        <section id="skills" class="space-y-4">
+          <h2 class="font-extrabold text-3xl text-black">Skills</h2>
+          <div
+            class="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-6"
+          >
+            <div class="space-y-4">
+              <h3 class="uppercase text-gray-500 font-medium text-sm">
+                Frontend
+              </h3>
+              <ul class="flex flex-wrap gap-1.5 -mx-1">
+                <li
+                  class="px-2 rounded-full bg-gray-100 border border-gray-200 py-0.5 text-sm text-gray-900"
+                >
+                  Javascript
+                </li>
+                <li
+                  class="px-2 rounded-full bg-gray-100 border border-gray-200 py-0.5 text-sm text-gray-900"
+                >
+                  HTML/CSS
+                </li>
+                <li
+                  class="px-2 rounded-full bg-gray-100 border border-gray-200 py-0.5 text-sm text-gray-900"
+                >
+                  Firebase
+                </li>
+                <li
+                  class="px-2 rounded-full bg-gray-100 border border-gray-200 py-0.5 text-sm text-gray-900"
+                >
+                  React
+                </li>
+                <li
+                  class="px-2 rounded-full bg-gray-100 border border-gray-200 py-0.5 text-sm text-gray-900"
+                >
+                  Redux
+                </li>
+                <li
+                  class="px-2 rounded-full bg-gray-100 border border-gray-200 py-0.5 text-sm text-gray-900"
+                >
+                  Svelte
+                </li>
+              </ul>
+            </div>
+
+            <div class="space-y-4">
+              <h3 class="uppercase text-gray-500 font-medium text-sm">API</h3>
+              <ul class="flex flex-wrap gap-1.5 -mx-1">
+                <li
+                  class="px-2 rounded-full bg-gray-100 border border-gray-200 py-0.5 text-sm text-gray-900"
+                >
+                  REST
+                </li>
+                <li
+                  class="px-2 rounded-full bg-gray-100 border border-gray-200 py-0.5 text-sm text-gray-900"
+                >
+                  GraphQL
+                </li>
+                <li
+                  class="px-2 rounded-full bg-gray-100 border border-gray-200 py-0.5 text-sm text-gray-900"
+                >
+                  RPC
+                </li>
+              </ul>
+            </div>
+
+            <div class="space-y-4">
+              <h3 class="uppercase text-gray-500 font-medium text-sm">
+                Server
+              </h3>
+              <ul class="flex flex-wrap gap-1.5 -mx-1">
+                <li
+                  class="px-2 rounded-full bg-gray-100 border border-gray-200 py-0.5 text-sm text-gray-900"
+                >
+                  Microservices
+                </li>
+                <li
+                  class="px-2 rounded-full bg-gray-100 border border-gray-200 py-0.5 text-sm text-gray-900"
+                >
+                  Firebase
+                </li>
+                <li
+                  class="px-2 rounded-full bg-gray-100 border border-gray-200 py-0.5 text-sm text-gray-900"
+                >
+                  AWS Lambda
+                </li>
+                <li
+                  class="px-2 rounded-full bg-gray-100 border border-gray-200 py-0.5 text-sm text-gray-900"
+                >
+                  Docker
+                </li>
+                <li
+                  class="px-2 rounded-full bg-gray-100 border border-gray-200 py-0.5 text-sm text-gray-900"
+                >
+                  Java
+                </li>
+                <li
+                  class="px-2 rounded-full bg-gray-100 border border-gray-200 py-0.5 text-sm text-gray-900"
+                >
+                  Python
+                </li>
+                <li
+                  class="px-2 rounded-full bg-gray-100 border border-gray-200 py-0.5 text-sm text-gray-900"
+                >
+                  Scala
+                </li>
+                <li
+                  class="px-2 rounded-full bg-gray-100 border border-gray-200 py-0.5 text-sm text-gray-900"
+                >
+                  Golang
+                </li>
+              </ul>
+            </div>
+
+            <div class="space-y-4">
+              <h3 class="uppercase text-gray-500 font-medium text-sm">Data</h3>
+              <ul class="flex flex-wrap gap-1.5 -mx-1">
+                <li
+                  class="px-2 rounded-full bg-gray-100 border border-gray-200 py-0.5 text-sm text-gray-900"
+                >
+                  SQL
+                </li>
+                <li
+                  class="px-2 rounded-full bg-gray-100 border border-gray-200 py-0.5 text-sm text-gray-900"
+                >
+                  NoSQL
+                </li>
+                <li
+                  class="px-2 rounded-full bg-gray-100 border border-gray-200 py-0.5 text-sm text-gray-900"
+                >
+                  Firestore
+                </li>
+                <li
+                  class="px-2 rounded-full bg-gray-100 border border-gray-200 py-0.5 text-sm text-gray-900"
+                >
+                  DynamoDB
+                </li>
+                <li
+                  class="px-2 rounded-full bg-gray-100 border border-gray-200 py-0.5 text-sm text-gray-900"
+                >
+                  PostgreSQL
+                </li>
+                <li
+                  class="px-2 rounded-full bg-gray-100 border border-gray-200 py-0.5 text-sm text-gray-900"
+                >
+                  Contentful
+                </li>
+              </ul>
+            </div>
+
+            <div class="space-y-4">
+              <h3 class="uppercase text-gray-500 font-medium text-sm">AI</h3>
+              <ul class="flex flex-wrap gap-1.5 -mx-1">
+                <li
+                  class="px-2 rounded-full bg-gray-100 border border-gray-200 py-0.5 text-sm text-gray-900"
+                >
+                  Mathematics
+                </li>
+                <li
+                  class="px-2 rounded-full bg-gray-100 border border-gray-200 py-0.5 text-sm text-gray-900"
+                >
+                  PyTorch
+                </li>
+                <li
+                  class="px-2 rounded-full bg-gray-100 border border-gray-200 py-0.5 text-sm text-gray-900"
+                >
+                  Pandas
+                </li>
+                <li
+                  class="px-2 rounded-full bg-gray-100 border border-gray-200 py-0.5 text-sm text-gray-900"
+                >
+                  Neural Networks
+                </li>
+                <li
+                  class="px-2 rounded-full bg-gray-100 border border-gray-200 py-0.5 text-sm text-gray-900"
+                >
+                  Transformers
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section id="experience" class="space-y-4">
+          <h2 class="font-extrabold text-3xl text-black">Experience</h2>
           <ul>
             <li>
-              <h3>Ocado Technology</h3>
-              <p>Software Engineer &#x2022; <em>Sept 2020 - present</em></p>
-              <ul>
-                <li>
-                  <p>
-                    <span class="bold-span"
-                      >Ecommerce &#x2022; <em>Sept 2021 - present</em></span
-                    >
-                    <br />
+              <h3 class="text-md text-blue-600 font-semibold">
+                Software Engineer @
+                <a
+                  href="https://www.ocado.com"
+                  class="underline hover:text-black"
+                  >Ocado Technology</a
+                >
+              </h3>
+              <p class="text-gray-500 font-medium text-sm mt-1">
+                Sept 2020 - present
+              </p>
+              <ul class="mt-6 space-y-12">
+                <li class="space-y-4">
+                  <h4 class="text-xs uppercase text-gray-500">
+                    Ecommerce &#x2022; <em>Sept 2021 - present</em>
+                  </h4>
+                  <p class="text-ms text-gray-900 leading-6">
                     Feature building on the ecommerce offering within a
                     cross-functional team [mobile, web, backend]. Deploying
                     changes to 9 major clients across 9 different countries,
@@ -164,7 +304,7 @@
                     Specific works includes:
                   </p>
 
-                  <ul>
+                  <ul class="list-disc space-y-4">
                     <li>
                       Designing and building full-stack system for recipes on
                       the platform, leveraging Contentful third party service as
@@ -192,60 +332,108 @@
                     </li>
                   </ul>
                 </li>
+                <li class="space-y-4">
+                  <h4 class="text-xs uppercase text-gray-500">
+                    Perception Robotics &#x2022;
+                    <em>March 2021 - Sept 2021</em>
+                  </h4>
+                  <p>
+                    Built a suite of applications to simulate operations in the
+                    warehouse. This allowed the robotic teams to test their
+                    software changes against physics engines as a form of
+                    pre-testing before using a live pick-station. Applications
+                    developed using python (FastAPI, gRPC), docker, ROS (Robot
+                    Operating System) and Unity physics engine. The simulation
+                    suite improved the SDLC and caught bugs before the need for
+                    physical testing, which had limited availability and a slow
+                    feedback loop.
+                  </p>
+                </li>
+                <li class="space-y-4">
+                  <h4 class="text-xs uppercase text-gray-500">
+                    Test Engineering &#x2022;
+                    <em>Sept 2020 - March 2021</em>
+                  </h4>
+                  <p>
+                    Development on an integration testing framework for
+                    applications running in the warehouses. Built using scala,
+                    docker and kubernetes to automatically deploy test
+                    deployments that users [other development teams] could write
+                    tests to assert the boundaries across warehouse
+                    applications.
+                  </p>
+                </li>
               </ul>
             </li>
-
-            <li>
-              <p>
-                <span class="bold-span"
-                  >Perception Robotics &#x2022;
-                  <em>March 2021 - Sept 2021</em></span
-                >
-                <br />
-                Built a suite of applications to simulate operations in the
-                warehouse. This allowed the robotic teams to test their software
-                changes against physics engines as a form of pre-testing before
-                using a live pick-station. Applications developed using python
-                (FastAPI, gRPC), docker, ROS (Robot Operating System) and Unity
-                physics engine. The simulation suite improved the SDLC and
-                caught bugs before the need for physical testing, which had
-                limited availability and a slow feedback loop.
+          </ul>
+        </section>
+        <section id="education" class="space-y-4">
+          <h2 class="font-extrabold text-3xl text-black">Education</h2>
+          <ul class="space-y-6">
+            <li class="space-y-1">
+              <h3 class="text-md text-blue-600 font-semibold">
+                University of Birmingham
+              </h3>
+              <p class="text-sm text-gray-500 font-medium">2019-2020</p>
+              <p class="text-md text-gray-900">
+                Computer Science MSc: Class II Division I - Average 86%
               </p>
             </li>
-            <li>
-              <p>
-                <span class="bold-span"
-                  >Test Engineering &#x2022;
-                  <em>Sept 2020 - March 2021</em></span
-                >
-                <br />
-                Development on an integration testing framework for applications
-                running in the warehouses. Built using scala, docker and
-                kubernetes to automatically deploy test deployments that users
-                [other development teams] could write tests to assert the
-                boundaries across warehouse applications.
+            <li class="space-y-1">
+              <h3 class="text-md text-blue-600 font-semibold">
+                University of Birmingham
+              </h3>
+              <p class="text-sm text-gray-500 font-medium">2015-2018</p>
+              <p class="text-md text-gray-900">
+                Physics MSc: Class II Division I
               </p>
             </li>
           </ul>
-        </div>
-      </section>
-      <section class="box">
-        <div class="vertical-box">
-          <h2>Education</h2>
-          <ul>
+        </section>
+        <section id="contact" class="space-y-4">
+          <h2 class="font-extrabold text-3xl text-black">Contact</h2>
+          <ul class="space-y-3">
             <li>
-              <h3>University of Birmingham</h3>
-              <p>
-                Computer Science MSc<br />Class II Division I - Average 86%<br />2019-2020
-              </p>
+              <a
+                href="http://www.devonbrazier.co.uk"
+                target="_blank"
+                class="text-md text-blue-600 font-semibold underline hover:text-black"
+                >Website</a
+              >
             </li>
             <li>
-              <h3>University of Birmingham</h3>
-              <p>Physics MSc<br />Class II Division I<br />2015-2018</p>
+              <a
+                href="https://www.linkedin.com/in/devon-brazier"
+                target="_blank"
+                class="text-md text-blue-600 font-semibold underline hover:text-black"
+                >LinkedIn</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/yenille/"
+                target="_blank"
+                class="text-md text-blue-600 font-semibold underline hover:text-black"
+                >GitHub</a
+              >
+            </li>
+            <li>
+              <a
+                href="mailto:devonbrazier@protonmail.com"
+                class="text-md text-blue-600 font-semibold underline hover:text-black"
+                >Email</a
+              >
+            </li>
+            <li>
+              <a
+                href="tel:+447540420135"
+                class="text-md text-blue-600 font-semibold underline hover:text-black"
+                >Phone</a
+              >
             </li>
           </ul>
-        </div>
-      </section>
-    </main>
+        </section>
+      </main>
+    </div>
   </body>
 </html>
